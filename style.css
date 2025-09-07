@@ -14,43 +14,49 @@ body {
 .container {
   display: flex;
   width: 800px;
-  height: 550px;
+  height: 630px;
   justify-content: center;
   align-items: center;
   border: 2px dashed white;
-  margin: 70px auto;
+  margin: 30px auto;
   flex-wrap: wrap;
   /* padding: 10px; */
   position: relative;
 }
 
 .alert-betul {
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 50%;
+  /* top: 50%; */
+  /* margin-top: 300px; */
+  /* transform: translate(-50%, -50%);
+  left: 50%; */
   position: absolute;
   display: none;
+  width: 100%;
+  height: 100%;
 }
 
 .alert-betul img {
-  width: 1000px;
+  width: 800px;
   height: 600px;
 }
 
 .alert-salah {
-  top: 50%;
-  transform: translate(-50%, -50%);
-  left: 50%;
+  /* top: 50%; */
+  /* margin-top: 300px; */
+  /* transform: translate(-50%, -50%);
+  left: 50%; */
   position: absolute;
   display: none;
   z-index: 9999;
+  width: 100%;
+  height: 100%;
 }
 
 .score {
   width: 600px;
   height: 50px;
   position: absolute;
-  top: 10%;
+  top: 35px;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -250,6 +256,7 @@ body {
   border: 1px solid red;
   display: none;
   flex-direction: column;
+  text-align: center;
 }
 .game-over a {
   font-size: 20px;
@@ -273,6 +280,11 @@ body {
 .delete {
   transform: scale(0);
   transition: 1s;
+}
+
+.footer {
+  color: white;
+  text-align: center;
 }
 @media (max-width: 500px) {
   body {
@@ -299,7 +311,7 @@ body {
   }
 
   .score {
-    margin-top: -15px;
+    margin-top: 15px;
   }
 
   .score .tombol,
