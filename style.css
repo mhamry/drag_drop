@@ -7,7 +7,7 @@
 
 body {
   background-color: blue;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .container {
@@ -274,9 +274,6 @@ body {
   transition: 1s;
 }
 @media (max-width: 500px) {
-  body {
-    overflow-x: hidden;
-  }
   .container {
     width: 300px;
     height: 600px;
