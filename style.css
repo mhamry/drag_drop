@@ -285,11 +285,19 @@ body {
   text-align: center;
   margin-top: -25px;
 }
-@media (max-width: 578px) {
+@media (max-width: 500px) {
   .container {
-    width: 100%;
+    width: auto;
     height: 550px;
     margin-top: 50px;
+  }
+
+  .game {
+    width: auto;
+  }
+
+  .game .cover {
+    width: auto;
   }
 
   .indonesia,
