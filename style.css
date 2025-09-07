@@ -275,7 +275,7 @@ body {
 }
 @media (max-width: 578px) {
   .container {
-    width: 450px;
+    width: 400px;
     height: 600px;
     padding: 3px;
     margin-top: 30px;
