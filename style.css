@@ -90,7 +90,6 @@ body {
   text-align: center;
 }
 
-.indonesia,
 .english {
   align-content: center;
   cursor: grab;
@@ -106,7 +105,24 @@ body {
   position: relative;
   word-wrap: break-word;
   padding: 3px;
-  background-color: transparent;
+  background-color: yellow;
+}
+.indonesia {
+  background-color: violet;
+  align-content: center;
+  cursor: grab;
+  height: 100px;
+  width: 100px;
+  align-items: center;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+  word-wrap: break-word;
+  padding: 3px;
 }
 
 .border {
@@ -285,13 +301,14 @@ body {
 .footer {
   color: white;
   text-align: center;
-  margin-top: -25px;
+  margin-top: -20px;
 }
+
 @media (max-width: 500px) {
   .container {
     width: auto;
     height: 550px;
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   .game {
