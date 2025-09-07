@@ -13,7 +13,8 @@ body {
 
 .container {
   display: flex;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   height: 630px;
   justify-content: center;
   align-items: center;
@@ -30,14 +31,14 @@ body {
   left: 50%;
   position: absolute;
   display: none;
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
 }
 
-.alert-betul img {
+/* .alert-betul img {
   width: 800px;
   height: 600px;
-}
+} */
 
 .alert-salah {
   top: 50%;
@@ -289,7 +290,7 @@ body {
   }
   .container {
     width: auto;
-    height: 500px;
+    height: 550px;
     margin-top: 50px;
   }
 
@@ -322,7 +323,7 @@ body {
   .game-over {
     width: 100%;
     height: 100%;
-    font-size: 50px;
+    font-size: 35px;
   }
 
   .game-over p {
