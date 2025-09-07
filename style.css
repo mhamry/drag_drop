@@ -6,8 +6,8 @@
 }
 
 body {
-  background-color: #0b0423;
-  /* overflow-y: hidden; */
+  background-color: blue;
+  overflow-y: hidden;
 }
 
 .container {
