@@ -283,7 +283,7 @@ body {
   text-align: center;
   margin-top: -25px;
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   body {
     overflow: hidden;
   }
