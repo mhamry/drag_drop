@@ -275,18 +275,22 @@ body {
   transition: 1s;
 }
 @media (max-width: 500px) {
+  body {
+    overflow: hidden;
+  }
   .container {
     width: auto;
-    height: auto;
+    height: 550px;
     margin-top: 50px;
   }
 
   .indonesia,
   .english {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     font-size: 15px;
+    margin: 5px;
   }
 
   .title {
@@ -300,9 +304,9 @@ body {
 
   .score .tombol,
   .score .remain-time {
-    width: 100px;
+    width: 150px;
     height: 30px;
-    font-size: 10px;
+    font-size: 15px;
     border: 1px solid white;
   }
 
