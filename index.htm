@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag nad drop satu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio src="image/benar.mp3" class="right-sound"></audio>
+    <audio src="image/salah.mp3" class="wrong-sound"></audio>
+    <audio src="image/hitung-mundur.mp3" class="hitung-mundur"></audio>
+    <div class="container">
+      <div class="alert-betul"><img src="image/alert-betul1.gif" alt="" /></div>
+      <div class="alert-salah"><img src="image/alert-salah.gif" alt="" /></div>
+      <div class="score">
+        <div class="tombol">Your Score <span class="user-score">0</span></div>
+        <div class="remain-time">Time Left <span class="timer">01:00</span></div>
+      </div>
+      <div class="game-over">
+        <p>GAME IS OVER</p>
+        <a href="#" class="play-again">Play Again</a>
+      </div>
+      <div class="game satu">
+        <div class="title"><span>🏫</span>Things in Classroom : Benda di Kelas</div>
+        <div class="cover">
+          <div class="english" draggable="true" data-english="BUKU" style="background: violet">BOOK</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGGARIS" style="background: yellow">PENGGARIS</div>
+          <div class="english" draggable="true" data-english="KURSI" style="background: violet">CHAIR</div>
+          <div class="english" draggable="true" data-english="MEJA" style="background: violet">TABLE</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENA" style="background: yellow">PENA</div>
+          <div class="english" draggable="true" data-english="PENGGARIS" style="background: violet">RULLER</div>
+          <div class="english" draggable="true" data-english="PENA" style="background: violet">PEN</div>
+          <div class="indonesia" draggable="true" data-indonesia="KURSI" style="background: yellow">KURSI</div>
+          <div class="indonesia" draggable="true" data-indonesia="PINTU" style="background: yellow">PINTU</div>
+          <div class="english" draggable="true" data-english="PENGHAPUS" style="background: violet">ERASER</div>
+          <div class="english" draggable="true" data-english="PINTU" style="background: violet">DOOR</div>
+          <div class="indonesia" draggable="true" data-indonesia="MEJA" style="background: yellow">MEJA</div>
+          <div class="indonesia" draggable="true" data-indonesia="TAS" style="background: yellow">TAS</div>
+          <div class="english" draggable="true" data-english="PAPAN TULIS" style="background: violet">WHITE BOARD</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGHAPUS" style="background: yellow">PENGHAPUS</div>
+          <div class="indonesia" draggable="true" data-indonesia="BUKU" style="background: yellow">BUKU</div>
+          <div class="indonesia" draggable="true" data-indonesia="PAPAN TULIS" style="background: yellow">PAPAN TULIS</div>
+          <div class="english" draggable="true" data-english="TAS" style="background: violet">BAG</div>
+        </div>
+      </div>
+      <div class="game dua">
+        <div class="title"><span>🟡</span>Colour : Warna</div>
+        <div class="cover">
+          <div class="english" draggable="true" data-english="BIRU" style="background: violet">BLUE</div>
+          <div class="indonesia" draggable="true" data-indonesia="MERAH" style="background: yellow">MERAH</div>
+          <div class="english" draggable="true" data-english="HITAM" style="background: violet">BLACK</div>
+          <div class="english" draggable="true" data-english="KUNING" style="background: violet">YELLOW</div>
+          <div class="indonesia" draggable="true" data-indonesia="HITAM" style="background: yellow">HITAM</div>
+          <div class="english" draggable="true" data-english="COKELAT" style="background: violet">BROWN</div>
+          <div class="english" draggable="true" data-english="ABU-ABU" style="background: violet">GREY</div>
+          <div class="indonesia" draggable="true" data-indonesia="ABU-ABU" style="background: yellow">ABU-ABU</div>
+          <div class="indonesia" draggable="true" data-indonesia="HIJAU" style="background: yellow">HIJAU</div>
+          <div class="english" draggable="true" data-english="PUTIH" style="background: violet">WHITE</div>
+          <div class="english" draggable="true" data-english="HIJAU" style="background: violet">GREEN</div>
+          <div class="indonesia" draggable="true" data-indonesia="UNGU" style="background: yellow">UNGU</div>
+          <div class="indonesia" draggable="true" data-indonesia="COKELAT" style="background: yellow">COKELAT</div>
+          <div class="english" draggable="true" data-english="UNGU" style="background: violet">PURPLE</div>
+          <div class="indonesia" draggable="true" data-indonesia="PUTIH" style="background: yellow">PUTIH</div>
+          <div class="indonesia" draggable="true" data-indonesia="KUNING" style="background: yellow">KUNING</div>
+          <div class="indonesia" draggable="true" data-indonesia="BIRU" style="background: yellow">BIRU</div>
+          <div class="english" draggable="true" data-english="MERAH" style="background: violet">RED</div>
+        </div>
+      </div>
+      <div class="game tiga">
+        <div class="title"><span>🍓</span>Fruit : Buah-buahan</div>
+        <div class="cover">
+          <div class="english" draggable="true" data-english="APEL" style="background: violet">APPLE</div>
+          <div class="indonesia" draggable="true" data-indonesia="MANGGA" style="background: yellow">MANGGA</div>
+          <div class="english" draggable="true" data-english="SEMANGKA" style="background: violet">WATER MELON</div>
+          <div class="english" draggable="true" data-english="NANGKA" style="background: violet">JACK FRUIT</div>
+          <div class="indonesia" draggable="true" data-indonesia="BUAH NAGA" style="background: yellow">BUAH NAGA</div>
+          <div class="english" draggable="true" data-english="PISANG" style="background: violet">BANANA</div>
+          <div class="english" draggable="true" data-english="JERUK" style="background: violet">ORANGE</div>
+          <div class="indonesia" draggable="true" data-indonesia="ANGGUR" style="background: yellow">ANGGUR</div>
+          <div class="indonesia" draggable="true" data-indonesia="NENAS" style="background: yellow">NENAS</div>
+          <div class="english" draggable="true" data-english="NENAS" style="background: violet">PINEAPPLE</div>
+          <div class="english" draggable="true" data-english="ANGGUR" style="background: violet">GRAPES</div>
+          <div class="indonesia" draggable="true" data-indonesia="JERUK" style="background: yellow">JERUK</div>
+          <div class="indonesia" draggable="true" data-indonesia="PISANG" style="background: yellow">PISANG</div>
+          <div class="english" draggable="true" data-english="BUAH NAGA" style="background: violet">JACK FRUIT</div>
+          <div class="indonesia" draggable="true" data-indonesia="NANGKA" style="background: yellow">NANGKA</div>
+          <div class="indonesia" draggable="true" data-indonesia="SEMANGKA" style="background: yellow">SEMANGKA</div>
+          <div class="indonesia" draggable="true" data-indonesia="APEL" style="background: yellow">APEL</div>
+          <div class="english" draggable="true" data-english="MANGGA" style="background: violet">MANGO</div>
+        </div>
+      </div>
+      <div class="game empat">
+        <div class="title"><span>🐅</span>Wild Animal : Binatang Buas</div>
+        <div class="cover">
+          <div class="english" draggable="true" data-english="ULAR" style="background: violet">SNAKE</div>
+          <div class="english" draggable="true" data-english="SRIGALA" style="background: violet">WOLF</div>
+          <div class="english" draggable="true" data-english="SINGA" style="background: violet">LION</div>
+          <div class="english" draggable="true" data-english="BERUANG" style="background: violet">BEAR</div>
+          <div class="english" draggable="true" data-english="BUAYA" style="background: violet">CROCODILE</div>
+          <div class="english" draggable="true" data-english="HARIMAU" style="background: violet">TIGER</div>
+          <div class="english" draggable="true" data-english="MACAN TUTUL" style="background: violet">LEOPARD</div>
+          <div class="english" draggable="true" data-english="BABI" style="background: violet">PIG</div>
+          <div class="english" draggable="true" data-english="KOMODO" style="background: violet">COMODO</div>
+
+          <div class="indonesia" draggable="true" data-indonesia="KOMODO" style="background: yellow">KOMODO</div>
+          <div class="indonesia" draggable="true" data-indonesia="BABI" style="background: yellow">BABI</div>
+          <div class="indonesia" draggable="true" data-indonesia="BERUANG" style="background: yellow">BERUANG</div>
+          <div class="indonesia" draggable="true" data-indonesia="MACAN TUTUL" style="background: yellow">MACAN TUTUL</div>
+          <div class="indonesia" draggable="true" data-indonesia="SINGA" style="background: yellow">SINGA</div>
+          <div class="indonesia" draggable="true" data-indonesia="SRIGALA" style="background: yellow">SRIGALA</div>
+          <div class="indonesia" draggable="true" data-indonesia="ULAR" style="background: yellow">ULAR</div>
+          <div class="indonesia" draggable="true" data-indonesia="BUAYA" style="background: yellow">BUAYA</div>
+          <div class="indonesia" draggable="true" data-indonesia="HARIMAU" style="background: yellow">HARIMAU</div>
+        </div>
+      </div>
+      <div class="game lima">
+        <div class="title"><span>🐦‍</span>Bird : Burung</div>
+        <div class="cover">
+          <div class="english" draggable="true" data-english="BURUNG HANTU" style="background: yellowgreen">OWL</div>
+          <div class="english" draggable="true" data-english="ELANG" style="background: yellowgreen">EAGLE</div>
+          <div class="english" draggable="true" data-english="GAGAK" style="background: yellowgreen">CROW</div>
+          <div class="english" draggable="true" data-english="KAKATUA" style="background: yellowgreen">COCKATOO</div>
+          <div class="english" draggable="true" data-english="BURUNG NURI" style="background: yellowgreen">PARROT</div>
+          <div class="english" draggable="true" data-english="BURUNG DARA" style="background: yellowgreen">DOVE</div>
+          <div class="english" draggable="true" data-english="BURUNG PIPIT" style="background: yellowgreen">SPARROW</div>
+          <div class="english" draggable="true" data-english="MERPATI" style="background: yellowgreen">PIGEON</div>
+          <div class="english" draggable="true" data-english="RAJAWALI" style="background: yellowgreen">HAWK</div>
+
+          <div class="indonesia" draggable="true" data-indonesia="BURUNG HANTU" style="background: palevioletred">BURUNG HANTU</div>
+          <div class="indonesia" draggable="true" data-indonesia="ELANG" style="background: palevioletred">ELANG</div>
+          <div class="indonesia" draggable="true" data-indonesia="GAGAK" style="background: palevioletred">GAGAK</div>
+          <div class="indonesia" draggable="true" data-indonesia="KAKATUA" style="background: palevioletred">KAKATUA</div>
+          <div class="indonesia" draggable="true" data-indonesia="BURUNG NURI" style="background: palevioletred">BURUNG NURI</div>
+          <div class="indonesia" draggable="true" data-indonesia="BURUNG DARA" style="background: palevioletred">BURUNG DARA</div>
+          <div class="indonesia" draggable="true" data-indonesia="BURUNG PIPIT" style="background: palevioletred">BURUNG PIPIT</div>
+          <div class="indonesia" draggable="true" data-indonesia="MERPATI" style="background: palevioletred">MERPATI</div>
+          <div class="indonesia" draggable="true" data-indonesia="RAJAWALI" style="background: palevioletred">RAJAWALI</div>
+        </div>
+      </div>
+      <div class="game enam">
+        <div class="title"><span>🥀</span>Vegatable : sayur-sayuran</div>
+        <div class="cover">
+          <div class="english" draggable="true" data-english="CABE" style="background: violet">CHILLI</div>
+          <div class="english" draggable="true" data-english="BUNCIS" style="background: violet">BEAN</div>
+          <div class="english" draggable="true" data-english="BAWANG MERAH" style="background: violet">ONION</div>
+          <div class="english" draggable="true" data-english="BAWANG PUTIH" style="background: violet">GARLIC</div>
+          <div class="english" draggable="true" data-english="BAYAM" style="background: violet">SPINACH</div>
+          <div class="english" draggable="true" data-english="TOMAT" style="background: violet">TOMATO</div>
+          <div class="english" draggable="true" data-english="MENTIMUN" style="background: violet">CUCUMBER</div>
+          <div class="english" draggable="true" data-english="WORTEL" style="background: violet">CARROT</div>
+          <div class="english" draggable="true" data-english="KENTANG" style="background: violet">POTATO</div>
+
+          <div class="indonesia" draggable="true" data-indonesia="CABE" style="background: yellow">CABE</div>
+          <div class="indonesia" draggable="true" data-indonesia="BUNCIS" style="background: yellow">BUNCIS</div>
+          <div class="indonesia" draggable="true" data-indonesia="BAWANG MERAH" style="background: yellow">BAWANG MERAH</div>
+          <div class="indonesia" draggable="true" data-indonesia="BAWANG PUTIH" style="background: yellow">BAWANG PUTIH</div>
+          <div class="indonesia" draggable="true" data-indonesia="BAYAM" style="background: yellow">BAYAM</div>
+          <div class="indonesia" draggable="true" data-indonesia="TOMAT" style="background: yellow">TOMATO</div>
+          <div class="indonesia" draggable="true" data-indonesia="MENTIMUN" style="background: yellow">MENTIMUN</div>
+          <div class="indonesia" draggable="true" data-indonesia="WORTEL" style="background: yellow">CARROT</div>
+          <div class="indonesia" draggable="true" data-indonesia="KENTANG" style="background: yellow">KENTANG</div>
+        </div>
+      </div>
+      <div class="game tujuh">
+        <div class="title"><span>🍕</span>Food : Makanan</div>
+        <div class="cover">
+          <div class="english" draggable="true" data-english="BUKU" style="background: violet">BOOK</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGGARIS" style="background: yellow">PENGGARIS</div>
+          <div class="english" draggable="true" data-english="KURSI" style="background: violet">CHAIR</div>
+          <div class="english" draggable="true" data-english="MEJA" style="background: violet">TABLE</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENA" style="background: yellow">PENA</div>
+          <div class="english" draggable="true" data-english="PENGGARIS" style="background: violet">RULLER</div>
+          <div class="english" draggable="true" data-english="PENA" style="background: violet">PEN</div>
+          <div class="indonesia" draggable="true" data-indonesia="KURSI" style="background: yellow">KURSI</div>
+          <div class="indonesia" draggable="true" data-indonesia="PINTU" style="background: yellow">PINTU</div>
+          <div class="english" draggable="true" data-english="PENGHAPUS" style="background: violet">ERASER</div>
+          <div class="english" draggable="true" data-english="PINTU" style="background: violet">DOOR</div>
+          <div class="indonesia" draggable="true" data-indonesia="MEJA" style="background: yellow">MEJA</div>
+          <div class="indonesia" draggable="true" data-indonesia="TAS" style="background: yellow">TAS</div>
+          <div class="english" draggable="true" data-english="PAPAN TULIS" style="background: violet">WHITE BOARD</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGHAPUS" style="background: yellow">PENGHAPUS</div>
+          <div class="indonesia" draggable="true" data-indonesia="BUKU" style="background: yellow">BUKU</div>
+          <div class="indonesia" draggable="true" data-indonesia="PAPAN TULIS" style="background: yellow">PAPAN TULIS</div>
+          <div class="english" draggable="true" data-english="TAS" style="background: violet">BAG</div>
+        </div>
+      </div>
+      <div class="game delapan">
+        <div class="title"><span>🍹</span>Drinking : Minuman</div>
+        <div class="cover">
+          <div class="english" draggable="true" data-english="BUKU" style="background: violet">BOOK</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGGARIS" style="background: yellow">PENGGARIS</div>
+          <div class="english" draggable="true" data-english="KURSI" style="background: violet">CHAIR</div>
+          <div class="english" draggable="true" data-english="MEJA" style="background: violet">TABLE</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENA" style="background: yellow">PENA</div>
+          <div class="english" draggable="true" data-english="PENGGARIS" style="background: violet">RULLER</div>
+          <div class="english" draggable="true" data-english="PENA" style="background: violet">PEN</div>
+          <div class="indonesia" draggable="true" data-indonesia="KURSI" style="background: yellow">KURSI</div>
+          <div class="indonesia" draggable="true" data-indonesia="PINTU" style="background: yellow">PINTU</div>
+          <div class="english" draggable="true" data-english="PENGHAPUS" style="background: violet">ERASER</div>
+          <div class="english" draggable="true" data-english="PINTU" style="background: violet">DOOR</div>
+          <div class="indonesia" draggable="true" data-indonesia="MEJA" style="background: yellow">MEJA</div>
+          <div class="indonesia" draggable="true" data-indonesia="TAS" style="background: yellow">TAS</div>
+          <div class="english" draggable="true" data-english="PAPAN TULIS" style="background: violet">WHITE BOARD</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGHAPUS" style="background: yellow">PENGHAPUS</div>
+          <div class="indonesia" draggable="true" data-indonesia="BUKU" style="background: yellow">BUKU</div>
+          <div class="indonesia" draggable="true" data-indonesia="PAPAN TULIS" style="background: yellow">PAPAN TULIS</div>
+          <div class="english" draggable="true" data-english="TAS" style="background: violet">BAG</div>
+        </div>
+      </div>
+      <div class="game sembilan">
+        <div class="title"><span>🚍</span>Transportation : Alat Transportasi</div>
+        <div class="cover">
+          <div class="english" draggable="true" data-english="BUKU" style="background: violet">BOOK</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGGARIS" style="background: yellow">PENGGARIS</div>
+          <div class="english" draggable="true" data-english="KURSI" style="background: violet">CHAIR</div>
+          <div class="english" draggable="true" data-english="MEJA" style="background: violet">TABLE</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENA" style="background: yellow">PENA</div>
+          <div class="english" draggable="true" data-english="PENGGARIS" style="background: violet">RULLER</div>
+          <div class="english" draggable="true" data-english="PENA" style="background: violet">PEN</div>
+          <div class="indonesia" draggable="true" data-indonesia="KURSI" style="background: yellow">KURSI</div>
+          <div class="indonesia" draggable="true" data-indonesia="PINTU" style="background: yellow">PINTU</div>
+          <div class="english" draggable="true" data-english="PENGHAPUS" style="background: violet">ERASER</div>
+          <div class="english" draggable="true" data-english="PINTU" style="background: violet">DOOR</div>
+          <div class="indonesia" draggable="true" data-indonesia="MEJA" style="background: yellow">MEJA</div>
+          <div class="indonesia" draggable="true" data-indonesia="TAS" style="background: yellow">TAS</div>
+          <div class="english" draggable="true" data-english="PAPAN TULIS" style="background: violet">WHITE BOARD</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGHAPUS" style="background: yellow">PENGHAPUS</div>
+          <div class="indonesia" draggable="true" data-indonesia="BUKU" style="background: yellow">BUKU</div>
+          <div class="indonesia" draggable="true" data-indonesia="PAPAN TULIS" style="background: yellow">PAPAN TULIS</div>
+          <div class="english" draggable="true" data-english="TAS" style="background: violet">BAG</div>
+        </div>
+      </div>
+      <div class="game sepuluh">
+        <div class="title"><span>📺</span>Things in House : Benda di Rumah</div>
+        <div class="cover">
+          <div class="english" draggable="true" data-english="BUKU" style="background: violet">BOOK</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGGARIS" style="background: yellow">PENGGARIS</div>
+          <div class="english" draggable="true" data-english="KURSI" style="background: violet">CHAIR</div>
+          <div class="english" draggable="true" data-english="MEJA" style="background: violet">TABLE</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENA" style="background: yellow">PENA</div>
+          <div class="english" draggable="true" data-english="PENGGARIS" style="background: violet">RULLER</div>
+          <div class="english" draggable="true" data-english="PENA" style="background: violet">PEN</div>
+          <div class="indonesia" draggable="true" data-indonesia="KURSI" style="background: yellow">KURSI</div>
+          <div class="indonesia" draggable="true" data-indonesia="PINTU" style="background: yellow">PINTU</div>
+          <div class="english" draggable="true" data-english="PENGHAPUS" style="background: violet">ERASER</div>
+          <div class="english" draggable="true" data-english="PINTU" style="background: violet">DOOR</div>
+          <div class="indonesia" draggable="true" data-indonesia="MEJA" style="background: yellow">MEJA</div>
+          <div class="indonesia" draggable="true" data-indonesia="TAS" style="background: yellow">TAS</div>
+          <div class="english" draggable="true" data-english="PAPAN TULIS" style="background: violet">WHITE BOARD</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGHAPUS" style="background: yellow">PENGHAPUS</div>
+          <div class="indonesia" draggable="true" data-indonesia="BUKU" style="background: yellow">BUKU</div>
+          <div class="indonesia" draggable="true" data-indonesia="PAPAN TULIS" style="background: yellow">PAPAN TULIS</div>
+          <div class="english" draggable="true" data-english="TAS" style="background: violet">BAG</div>
+          <div class="indonesia" draggable="true" data-indonesia="PAPAN TULIS" style="background: yellow">PAPAN TULIS</div>
+          <div class="english" draggable="true" data-english="TAS" style="background: violet">BAG</div>
+        </div>
+      </div>
+      <div class="game sebelas">
+        <div class="title"><span>✍️</span>Part of Body : bagian Tubuh</div>
+        <div class="cover">
+          <div class="english" draggable="true" data-english="BUKU" style="background: violet">BOOK</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGGARIS" style="background: yellow">PENGGARIS</div>
+          <div class="english" draggable="true" data-english="KURSI" style="background: violet">CHAIR</div>
+          <div class="english" draggable="true" data-english="MEJA" style="background: violet">TABLE</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENA" style="background: yellow">PENA</div>
+          <div class="english" draggable="true" data-english="PENGGARIS" style="background: violet">RULLER</div>
+          <div class="english" draggable="true" data-english="PENA" style="background: violet">PEN</div>
+          <div class="indonesia" draggable="true" data-indonesia="KURSI" style="background: yellow">KURSI</div>
+          <div class="indonesia" draggable="true" data-indonesia="PINTU" style="background: yellow">PINTU</div>
+          <div class="english" draggable="true" data-english="PENGHAPUS" style="background: violet">ERASER</div>
+          <div class="english" draggable="true" data-english="PINTU" style="background: violet">DOOR</div>
+          <div class="indonesia" draggable="true" data-indonesia="MEJA" style="background: yellow">MEJA</div>
+          <div class="indonesia" draggable="true" data-indonesia="TAS" style="background: yellow">TAS</div>
+          <div class="english" draggable="true" data-english="PAPAN TULIS" style="background: violet">WHITE BOARD</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGHAPUS" style="background: yellow">PENGHAPUS</div>
+          <div class="indonesia" draggable="true" data-indonesia="BUKU" style="background: yellow">BUKU</div>
+          <div class="indonesia" draggable="true" data-indonesia="PAPAN TULIS" style="background: yellow">PAPAN TULIS</div>
+          <div class="english" draggable="true" data-english="TAS" style="background: violet">BAG</div>
+        </div>
+      </div>
+      <div class="game duabelas">
+        <div class="title"><span>🐈</span>Pet : Hewan Peliaharaan</div>
+        <div class="cover">
+          <div class="english" draggable="true" data-english="BUKU" style="background: violet">BOOK</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGGARIS" style="background: yellow">PENGGARIS</div>
+          <div class="english" draggable="true" data-english="KURSI" style="background: violet">CHAIR</div>
+          <div class="english" draggable="true" data-english="MEJA" style="background: violet">TABLE</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENA" style="background: yellow">PENA</div>
+          <div class="english" draggable="true" data-english="PENGGARIS" style="background: violet">RULLER</div>
+          <div class="english" draggable="true" data-english="PENA" style="background: violet">PEN</div>
+          <div class="indonesia" draggable="true" data-indonesia="KURSI" style="background: yellow">KURSI</div>
+          <div class="indonesia" draggable="true" data-indonesia="PINTU" style="background: yellow">PINTU</div>
+          <div class="english" draggable="true" data-english="PENGHAPUS" style="background: violet">ERASER</div>
+          <div class="english" draggable="true" data-english="PINTU" style="background: violet">DOOR</div>
+          <div class="indonesia" draggable="true" data-indonesia="MEJA" style="background: yellow">MEJA</div>
+          <div class="indonesia" draggable="true" data-indonesia="TAS" style="background: yellow">TAS</div>
+          <div class="english" draggable="true" data-english="PAPAN TULIS" style="background: violet">WHITE BOARD</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGHAPUS" style="background: yellow">PENGHAPUS</div>
+          <div class="indonesia" draggable="true" data-indonesia="BUKU" style="background: yellow">BUKU</div>
+          <div class="indonesia" draggable="true" data-indonesia="PAPAN TULIS" style="background: yellow">PAPAN TULIS</div>
+          <div class="english" draggable="true" data-english="TAS" style="background: violet">BAG</div>
+        </div>
+      </div>
+      <div class="game tigabelas">
+        <div class="title"><span>👚</span>Clothes : Pakaian</div>
+        <div class="cover">
+          <div class="english" draggable="true" data-english="BUKU" style="background: violet">BOOK</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGGARIS" style="background: yellow">PENGGARIS</div>
+          <div class="english" draggable="true" data-english="KURSI" style="background: violet">CHAIR</div>
+          <div class="english" draggable="true" data-english="MEJA" style="background: violet">TABLE</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENA" style="background: yellow">PENA</div>
+          <div class="english" draggable="true" data-english="PENGGARIS" style="background: violet">RULLER</div>
+          <div class="english" draggable="true" data-english="PENA" style="background: violet">PEN</div>
+          <div class="indonesia" draggable="true" data-indonesia="KURSI" style="background: yellow">KURSI</div>
+          <div class="indonesia" draggable="true" data-indonesia="PINTU" style="background: yellow">PINTU</div>
+          <div class="english" draggable="true" data-english="PENGHAPUS" style="background: violet">ERASER</div>
+          <div class="english" draggable="true" data-english="PINTU" style="background: violet">DOOR</div>
+          <div class="indonesia" draggable="true" data-indonesia="MEJA" style="background: yellow">MEJA</div>
+          <div class="indonesia" draggable="true" data-indonesia="TAS" style="background: yellow">TAS</div>
+          <div class="english" draggable="true" data-english="PAPAN TULIS" style="background: violet">WHITE BOARD</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGHAPUS" style="background: yellow">PENGHAPUS</div>
+          <div class="indonesia" draggable="true" data-indonesia="BUKU" style="background: yellow">BUKU</div>
+          <div class="indonesia" draggable="true" data-indonesia="PAPAN TULIS" style="background: yellow">PAPAN TULIS</div>
+          <div class="english" draggable="true" data-english="TAS" style="background: violet">BAG</div>
+        </div>
+      </div>
+      <div class="game empatbelas">
+        <div class="title"><span>🧑‍🏫</span>Ocupation : Pekerjaan</div>
+        <div class="cover">
+          <div class="english" draggable="true" data-english="BUKU" style="background: violet">BOOK</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGGARIS" style="background: yellow">PENGGARIS</div>
+          <div class="english" draggable="true" data-english="KURSI" style="background: violet">CHAIR</div>
+          <div class="english" draggable="true" data-english="MEJA" style="background: violet">TABLE</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENA" style="background: yellow">PENA</div>
+          <div class="english" draggable="true" data-english="PENGGARIS" style="background: violet">RULLER</div>
+          <div class="english" draggable="true" data-english="PENA" style="background: violet">PEN</div>
+          <div class="indonesia" draggable="true" data-indonesia="KURSI" style="background: yellow">KURSI</div>
+          <div class="indonesia" draggable="true" data-indonesia="PINTU" style="background: yellow">PINTU</div>
+          <div class="english" draggable="true" data-english="PENGHAPUS" style="background: violet">ERASER</div>
+          <div class="english" draggable="true" data-english="PINTU" style="background: violet">DOOR</div>
+          <div class="indonesia" draggable="true" data-indonesia="MEJA" style="background: yellow">MEJA</div>
+          <div class="indonesia" draggable="true" data-indonesia="TAS" style="background: yellow">TAS</div>
+          <div class="english" draggable="true" data-english="PAPAN TULIS" style="background: violet">WHITE BOARD</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGHAPUS" style="background: yellow">PENGHAPUS</div>
+          <div class="indonesia" draggable="true" data-indonesia="BUKU" style="background: yellow">BUKU</div>
+          <div class="indonesia" draggable="true" data-indonesia="PAPAN TULIS" style="background: yellow">PAPAN TULIS</div>
+          <div class="english" draggable="true" data-english="TAS" style="background: violet">BAG</div>
+        </div>
+      </div>
+      <div class="game limabelas">
+        <div class="title"><span>📖 </span>Lesson : Mata Pelajaran</div>
+        <div class="cover">
+          <div class="english" draggable="true" data-english="BUKU" style="background: violet">BOOK</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGGARIS" style="background: yellow">PENGGARIS</div>
+          <div class="english" draggable="true" data-english="KURSI" style="background: violet">CHAIR</div>
+          <div class="english" draggable="true" data-english="MEJA" style="background: violet">TABLE</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENA" style="background: yellow">PENA</div>
+          <div class="english" draggable="true" data-english="PENGGARIS" style="background: violet">RULLER</div>
+          <div class="english" draggable="true" data-english="PENA" style="background: violet">PEN</div>
+          <div class="indonesia" draggable="true" data-indonesia="KURSI" style="background: yellow">KURSI</div>
+          <div class="indonesia" draggable="true" data-indonesia="PINTU" style="background: yellow">PINTU</div>
+          <div class="english" draggable="true" data-english="PENGHAPUS" style="background: violet">ERASER</div>
+          <div class="english" draggable="true" data-english="PINTU" style="background: violet">DOOR</div>
+          <div class="indonesia" draggable="true" data-indonesia="MEJA" style="background: yellow">MEJA</div>
+          <div class="indonesia" draggable="true" data-indonesia="TAS" style="background: yellow">TAS</div>
+          <div class="english" draggable="true" data-english="PAPAN TULIS" style="background: violet">WHITE BOARD</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGHAPUS" style="background: yellow">PENGHAPUS</div>
+          <div class="indonesia" draggable="true" data-indonesia="BUKU" style="background: yellow">BUKU</div>
+          <div class="indonesia" draggable="true" data-indonesia="PAPAN TULIS" style="background: yellow">PAPAN TULIS</div>
+          <div class="english" draggable="true" data-english="TAS" style="background: violet">BAG</div>
+        </div>
+      </div>
+      <div class="game enambelas">
+        <div class="title"><span>🏩</span>Public Place : Tempat Umum</div>
+        <div class="cover">
+          <div class="english" draggable="true" data-english="BUKU" style="background: violet">BOOK</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGGARIS" style="background: yellow">PENGGARIS</div>
+          <div class="english" draggable="true" data-english="KURSI" style="background: violet">CHAIR</div>
+          <div class="english" draggable="true" data-english="MEJA" style="background: violet">TABLE</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENA" style="background: yellow">PENA</div>
+          <div class="english" draggable="true" data-english="PENGGARIS" style="background: violet">RULLER</div>
+          <div class="english" draggable="true" data-english="PENA" style="background: violet">PEN</div>
+          <div class="indonesia" draggable="true" data-indonesia="KURSI" style="background: yellow">KURSI</div>
+          <div class="indonesia" draggable="true" data-indonesia="PINTU" style="background: yellow">PINTU</div>
+          <div class="english" draggable="true" data-english="PENGHAPUS" style="background: violet">ERASER</div>
+          <div class="english" draggable="true" data-english="PINTU" style="background: violet">DOOR</div>
+          <div class="indonesia" draggable="true" data-indonesia="MEJA" style="background: yellow">MEJA</div>
+          <div class="indonesia" draggable="true" data-indonesia="TAS" style="background: yellow">TAS</div>
+          <div class="english" draggable="true" data-english="PAPAN TULIS" style="background: violet">WHITE BOARD</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGHAPUS" style="background: yellow">PENGHAPUS</div>
+          <div class="indonesia" draggable="true" data-indonesia="BUKU" style="background: yellow">BUKU</div>
+          <div class="indonesia" draggable="true" data-indonesia="PAPAN TULIS" style="background: yellow">PAPAN TULIS</div>
+          <div class="english" draggable="true" data-english="TAS" style="background: violet">BAG</div>
+        </div>
+      </div>
+      <div class="game tujuhbelas">
+        <div class="title"><span>🏠 </span>Part of House : Bagian Rumah</div>
+        <div class="cover">
+          <div class="english" draggable="true" data-english="BUKU" style="background: violet">BOOK</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGGARIS" style="background: yellow">PENGGARIS</div>
+          <div class="english" draggable="true" data-english="KURSI" style="background: violet">CHAIR</div>
+          <div class="english" draggable="true" data-english="MEJA" style="background: violet">TABLE</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENA" style="background: yellow">PENA</div>
+          <div class="english" draggable="true" data-english="PENGGARIS" style="background: violet">RULLER</div>
+          <div class="english" draggable="true" data-english="PENA" style="background: violet">PEN</div>
+          <div class="indonesia" draggable="true" data-indonesia="KURSI" style="background: yellow">KURSI</div>
+          <div class="indonesia" draggable="true" data-indonesia="PINTU" style="background: yellow">PINTU</div>
+          <div class="english" draggable="true" data-english="PENGHAPUS" style="background: violet">ERASER</div>
+          <div class="english" draggable="true" data-english="PINTU" style="background: violet">DOOR</div>
+          <div class="indonesia" draggable="true" data-indonesia="MEJA" style="background: yellow">MEJA</div>
+          <div class="indonesia" draggable="true" data-indonesia="TAS" style="background: yellow">TAS</div>
+          <div class="english" draggable="true" data-english="PAPAN TULIS" style="background: violet">WHITE BOARD</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGHAPUS" style="background: yellow">PENGHAPUS</div>
+          <div class="indonesia" draggable="true" data-indonesia="BUKU" style="background: yellow">BUKU</div>
+          <div class="indonesia" draggable="true" data-indonesia="PAPAN TULIS" style="background: yellow">PAPAN TULIS</div>
+          <div class="english" draggable="true" data-english="TAS" style="background: violet">BAG</div>
+        </div>
+      </div>
+      <div class="game delapanbelas">
+        <div class="title"><span>🏃🏽‍♂️‍➡️</span>Verb : kata Kerja</div>
+        <div class="cover">
+          <div class="english" draggable="true" data-english="BUKU" style="background: violet">BOOK</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGGARIS" style="background: yellow">PENGGARIS</div>
+          <div class="english" draggable="true" data-english="KURSI" style="background: violet">CHAIR</div>
+          <div class="english" draggable="true" data-english="MEJA" style="background: violet">TABLE</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENA" style="background: yellow">PENA</div>
+          <div class="english" draggable="true" data-english="PENGGARIS" style="background: violet">RULLER</div>
+          <div class="english" draggable="true" data-english="PENA" style="background: violet">PEN</div>
+          <div class="indonesia" draggable="true" data-indonesia="KURSI" style="background: yellow">KURSI</div>
+          <div class="indonesia" draggable="true" data-indonesia="PINTU" style="background: yellow">PINTU</div>
+          <div class="english" draggable="true" data-english="PENGHAPUS" style="background: violet">ERASER</div>
+          <div class="english" draggable="true" data-english="PINTU" style="background: violet">DOOR</div>
+          <div class="indonesia" draggable="true" data-indonesia="MEJA" style="background: yellow">MEJA</div>
+          <div class="indonesia" draggable="true" data-indonesia="TAS" style="background: yellow">TAS</div>
+          <div class="english" draggable="true" data-english="PAPAN TULIS" style="background: violet">WHITE BOARD</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGHAPUS" style="background: yellow">PENGHAPUS</div>
+          <div class="indonesia" draggable="true" data-indonesia="BUKU" style="background: yellow">BUKU</div>
+          <div class="indonesia" draggable="true" data-indonesia="PAPAN TULIS" style="background: yellow">PAPAN TULIS</div>
+          <div class="english" draggable="true" data-english="TAS" style="background: violet">BAG</div>
+        </div>
+      </div>
+      <div class="game sembilanbelas">
+        <div class="title"><span>🏃🏽‍♂️‍➡️</span>Adjective : Kata Sifat</div>
+        <div class="cover">
+          <div class="english" draggable="true" data-english="BUKU" style="background: violet">BOOK</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGGARIS" style="background: yellow">PENGGARIS</div>
+          <div class="english" draggable="true" data-english="KURSI" style="background: violet">CHAIR</div>
+          <div class="english" draggable="true" data-english="MEJA" style="background: violet">TABLE</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENA" style="background: yellow">PENA</div>
+          <div class="english" draggable="true" data-english="PENGGARIS" style="background: violet">RULLER</div>
+          <div class="english" draggable="true" data-english="PENA" style="background: violet">PEN</div>
+          <div class="indonesia" draggable="true" data-indonesia="KURSI" style="background: yellow">KURSI</div>
+          <div class="indonesia" draggable="true" data-indonesia="PINTU" style="background: yellow">PINTU</div>
+          <div class="english" draggable="true" data-english="PENGHAPUS" style="background: violet">ERASER</div>
+          <div class="english" draggable="true" data-english="PINTU" style="background: violet">DOOR</div>
+          <div class="indonesia" draggable="true" data-indonesia="MEJA" style="background: yellow">MEJA</div>
+          <div class="indonesia" draggable="true" data-indonesia="TAS" style="background: yellow">TAS</div>
+          <div class="english" draggable="true" data-english="PAPAN TULIS" style="background: violet">WHITE BOARD</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGHAPUS" style="background: yellow">PENGHAPUS</div>
+          <div class="indonesia" draggable="true" data-indonesia="BUKU" style="background: yellow">BUKU</div>
+          <div class="indonesia" draggable="true" data-indonesia="PAPAN TULIS" style="background: yellow">PAPAN TULIS</div>
+          <div class="english" draggable="true" data-english="TAS" style="background: violet">BAG</div>
+        </div>
+      </div>
+      <div class="game duapuluh">
+        <div class="title"><span>🏃🏽‍♂️‍➡️</span>Personal Pronoun : Kata Ganti</div>
+        <div class="cover">
+          <div class="english" draggable="true" data-english="BUKU" style="background: violet">BOOK</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGGARIS" style="background: yellow">PENGGARIS</div>
+          <div class="english" draggable="true" data-english="KURSI" style="background: violet">CHAIR</div>
+          <div class="english" draggable="true" data-english="MEJA" style="background: violet">TABLE</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENA" style="background: yellow">PENA</div>
+          <div class="english" draggable="true" data-english="PENGGARIS" style="background: violet">RULLER</div>
+          <div class="english" draggable="true" data-english="PENA" style="background: violet">PEN</div>
+          <div class="indonesia" draggable="true" data-indonesia="KURSI" style="background: yellow">KURSI</div>
+          <div class="indonesia" draggable="true" data-indonesia="PINTU" style="background: yellow">PINTU</div>
+          <div class="english" draggable="true" data-english="PENGHAPUS" style="background: violet">ERASER</div>
+          <div class="english" draggable="true" data-english="PINTU" style="background: violet">DOOR</div>
+          <div class="indonesia" draggable="true" data-indonesia="MEJA" style="background: yellow">MEJA</div>
+          <div class="indonesia" draggable="true" data-indonesia="TAS" style="background: yellow">TAS</div>
+          <div class="english" draggable="true" data-english="PAPAN TULIS" style="background: violet">WHITE BOARD</div>
+          <div class="indonesia" draggable="true" data-indonesia="PENGHAPUS" style="background: yellow">PENGHAPUS</div>
+          <div class="indonesia" draggable="true" data-indonesia="BUKU" style="background: yellow">BUKU</div>
+          <div class="indonesia" draggable="true" data-indonesia="PAPAN TULIS" style="background: yellow">PAPAN TULIS</div>
+          <div class="english" draggable="true" data-english="TAS" style="background: violet">BAG</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
