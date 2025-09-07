@@ -14,7 +14,6 @@ body {
 .container {
   display: flex;
   width: 800px;
-
   height: 630px;
   justify-content: center;
   align-items: center;
@@ -284,7 +283,7 @@ body {
   text-align: center;
   margin-top: -25px;
 }
-@media (width: 500px) {
+@media (max-width: 500px) {
   body {
     overflow: hidden;
   }
