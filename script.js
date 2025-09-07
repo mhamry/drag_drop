@@ -101,7 +101,7 @@ playAgainBtn.addEventListener("click", (e) => {
   resetLevel(currentLevel);
 
   clearInterval(countdown);
-  timeLeft = 1 * 60;
+  timeLeft = 2 * 60;
   startTimer();
 
   getAllItems().forEach((el) => {
@@ -313,7 +313,7 @@ allItems.forEach((target) => {
 // ==========================
 // 9. TIMER
 // ==========================
-let timeLeft = 1 * 60;
+let timeLeft = 2 * 60;
 let countdown;
 const timerElement = document.querySelector(".timer");
 const gameOver = document.querySelector(".game-over");
