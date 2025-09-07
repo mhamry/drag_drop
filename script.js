@@ -358,8 +358,8 @@ startTimer();
 const resetBtn = document.querySelector(".reset-game");
 if (resetBtn) {
   resetBtn.addEventListener("click", () => {
-    localStorage.setItem("userScore", 0);
-    localStorage.setItem("currentLevel", 1);
+    localStorage.setItem("userScore");
+    localStorage.setItem("currentLevel");
     localStorage.setItem("scoredPairs");
     location.reload();
   });
@@ -369,7 +369,6 @@ if (resetBtn) {
 // Inisialisasi saat halaman dimuat
 // ==========================
 function init() {
-  localStorage(clear);
   // pastikan nilai dari localStorage valid (angka) dan dibatasi
   const maxLevel = 20;
   if (!currentLevel || isNaN(currentLevel) || currentLevel < 1) currentLevel = 1;
