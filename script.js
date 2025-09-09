@@ -33,7 +33,7 @@ function updateScore(point) {
 // ==========================
 // 3. Level management + LocalStorage
 // ==========================
-let currentLevel = 20;
+let currentLevel = 1;
 
 // ambil level dari localStorage kalau ada
 if (localStorage.getItem("currentLevel")) {
@@ -202,7 +202,7 @@ function checkWin() {
       if (currentLevel <= 20) {
         showLevel(currentLevel); // currentLevel sudah diupdate oleh setLevel()
         clearInterval(countdown);
-        timeLeft = 1 * 60;
+        timeLeft = 2 * 60;
         startTimer();
       } else {
         // alert("🎉 Semua level selesai! Game clear!");
@@ -372,7 +372,7 @@ if (resetBtn) {
 function init() {
   // pastikan nilai dari localStorage valid (angka) dan dibatasi
   const maxLevel = 20;
-  if (!currentLevel || isNaN(currentLevel) || currentLevel < 1) currentLevel = 20;
+  if (!currentLevel || isNaN(currentLevel) || currentLevel < 1) currentLevel = 1;
   if (currentLevel > maxLevel) currentLevel = maxLevel;
 
   // tampilkan level sesuai currentLevel yang kita baca dari localStorage
