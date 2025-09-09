@@ -20,7 +20,7 @@
         align-items: center;
         height: 100vh;
         background-color: #f0f0f0;
-        overflow: hidden;
+        /* overflow: hidden; */
       }
 
       #certificate {
@@ -33,7 +33,7 @@
         transform: translate(-500%);
         background-repeat: no-repeat;
         box-sizing: border-box;
-        background-image: url(../image/certificate/1.png);
+        background-image: url(../../image/certificate/1.png);
         background-size: cover;
         background-position: center;
       }
@@ -101,12 +101,12 @@
         left: 50%;
         top: 12%;
         transform: translate(-50%); */
-        margin: 225px auto;
+        margin: 215px auto;
         font-size: 5rem;
         font-style: italic;
         white-space: nowrap;
         font-family: "Sacramento", cursive;
-        font-weight: 400;
+        font-weight: 600;
         font-style: normal;
       }
 
@@ -116,7 +116,7 @@
 
       .next-level {
         /* border: 1px solid black; */
-        width: 400px;
+        width: 500px;
         height: 100px;
         margin: auto;
         background-color: transparent;
@@ -132,7 +132,7 @@
       .next-level a {
         display: block;
         font-size: 22px;
-        width: 300px;
+        width: 400px;
         height: 40px;
         background-color: rgb(49, 226, 43);
         margin: auto;
@@ -260,7 +260,8 @@
             .then(function (canvas) {
               const a = document.createElement("a");
               a.download = username + "_certificate.jpg";
-              a.href = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
+              // a.href = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
+              a.href = canvas.toDataURL("image/jpeg");
               document.body.appendChild(a);
               a.click();
               document.body.removeChild(a);
