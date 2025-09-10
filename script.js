@@ -207,9 +207,8 @@ function checkWin() {
       } else {
         // alert("🎉 Semua level selesai! Game clear!");
         localStorage(clear);
-        window.location.href = "sertifikat/sertifikat.html";
-
         clearInterval(countdown);
+        window.location.href = "sertifikat/sertifikat.html";
       }
     }, 500);
   }
