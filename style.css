@@ -305,6 +305,12 @@ body {
   margin-top: -20px;
 }
 
+.footer a {
+  text-decoration: none;
+  color: greenyellow;
+  font-size: larger;
+}
+
 @media (max-width: 500px) {
   .container {
     width: auto;
