@@ -311,6 +311,24 @@ body {
   font-size: larger;
 }
 
+.about-me {
+  width: 100px;
+  height: 40px;
+  background-color: #ffbf00;
+  color: black;
+  text-align: center;
+  border-radius: 9px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  border: 3px solid white;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  align-content: center;
+  margin-left: -600px;
+}
+
 @media (max-width: 500px) {
   .container {
     width: auto;
@@ -366,5 +384,13 @@ body {
     max-width: 500px;
     height: 550px;
     width: 100%;
+  }
+
+  .about-me {
+    margin-left: 0;
+    font-size: 15px;
+    width: 80px;
+    height: 30px;
+    margin-left: -350px;
   }
 }
