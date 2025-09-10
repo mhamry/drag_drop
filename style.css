@@ -385,12 +385,4 @@ body {
     height: 550px;
     width: 100%;
   }
-
-  .about-me {
-    margin-left: 0;
-    font-size: 15px;
-    width: 80px;
-    height: 30px;
-    margin-left: -350px;
-  }
 }
