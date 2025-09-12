@@ -18,7 +18,9 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background-color: #f0f0f0;
+        /* background-color: #f0f0f0; */
+        background-image: url(../image/alert-betul.gif);
+
         overflow: hidden;
       }
 
@@ -141,6 +143,20 @@
         border-radius: 10px;
         color: #f0f0f0;
       }
+
+      .selamat {
+        /* width: 400px;
+        height: 100px; */
+        min-width: 400px;
+        box-shadow: 10px 10px 20px;
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%);
+        padding: 10px;
+        box-sizing: border-box;
+      }
     </style>
   </head>
 
@@ -158,6 +174,9 @@
           <p>inhe Game  tof Knowledge</p> -->
           </div>
         </div>
+
+        <div class="selamat">Selamat anda telah menyelesaikan semua level pada game ini.Sebagai apresiasi kami atas keberhasilan anda.Kami memberikan sertifikat penghargaan yang dapat anda download di bawah ini.</div>
+
         <form action="" class="form">
           <label for="inputName">Tuliskan Nama Anda : </label>
           <input type="text" id="inputName" placeholder="Enter your name" autocomplete="off" focus />
@@ -165,10 +184,6 @@
 
         <button class="download" id="downloadButton">Download Sertifikat</button>
 
-        <!-- <button class="btn btn-primary" type="button" disabled>
-          <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
-          <span class="visually-hidden" role="status">Loading...</span>
-        </button> -->
         <button class="btn btn-primary" type="button" disabled>
           <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
           <span role="status">Loading...</span>
