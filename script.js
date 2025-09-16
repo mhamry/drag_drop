@@ -320,7 +320,7 @@ let timeLeft = 2 * 60;
 let countdown;
 const timerElement = document.querySelector(".timer");
 const gameOver = document.querySelector(".game-over");
-let gameEnded = false;
+// let gameEnded = false;
 
 function startTimer() {
   countdown = setInterval(() => {
