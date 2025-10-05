@@ -225,6 +225,10 @@ let allItems = document.querySelectorAll(".english, .indonesia");
 allItems.forEach((item) => {
   item.addEventListener("dragstart", function () {
     selected = this;
+    setTimeout(() => (this.style.opacity = "0"), 0);
+  });
+  item.addEventListener("dragend", function () {
+    setTimeout(() => (item.style.opacity = "1"));
   });
 });
 
